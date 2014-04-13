@@ -1,0 +1,19 @@
+<p>Welcome to Blog </p>
+<p>Login to continue</p>
+
+<form action="" method="post">
+    {{form.hidden_tag()}}
+   <p> {{form.email(placeholder="email")}}</p>
+   
+   {% for error in form.errors.email %}
+    <span style="color: red;">[{{error}}]</span>
+    {% endfor %}<br>
+    
+    <p> {{form.password(placeholder="password")}} </p>
+       {% for error in form.errors.password %}
+    <span style="color: red;">[{{error}}]</span>
+    {% endfor %}<br>
+    
+    <p><input type="submit" value="Login"></p>
+</form>
+
