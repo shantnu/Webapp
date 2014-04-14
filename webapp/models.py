@@ -58,7 +58,7 @@ if __name__ == '__main__':
 #[]
 
 # Correct
-#>>> uu= User.query.filter_by(email = "a@a.com").all()
+#>>> uu= User.query.filter_by(email = "a@a.com").all() ->Use first(), then can do read directly
 #>>> for u in uu:
 #...   print u.id
 #...
